@@ -22,7 +22,9 @@ Below is a link to the url of my quiz:
 https://nkc27.github.io/The-Javascript-Code-Quiz/
 
 
-# Screen shot below of the quiz
+Screen shot below of the quiz
+
+
 ![quiz](quiz.jpg)
 
 
