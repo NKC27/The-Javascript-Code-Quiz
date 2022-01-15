@@ -98,9 +98,16 @@ function checkAnswer(){
     console.log('Button clicked:', this)
     console.log('Answer selected:', this.value)
     
+    if (this.value === ) {
+      alert("Correct!");
+    } else {
+      alert("Sorry incorrect!");
+    }
+      //  block of code to be executed if the condition is true
+    }
       // time checker
       
-    }
+    
     //check that the answer is correct  - if not, take time off timer, if correct, fine
   
     //increment currentIndex
