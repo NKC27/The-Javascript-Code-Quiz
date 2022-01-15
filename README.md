@@ -27,4 +27,5 @@ Screen shot below of the quiz
 
 ![quiz](/images/quiz.png)
 
-
+** Still work in progress and unfortunatley I have not finished this 
+project but will update soon with a fully finished quiz.
