@@ -25,6 +25,6 @@ https://nkc27.github.io/The-Javascript-Code-Quiz/
 Screen shot below of the quiz
 
 
-![quiz](quiz.jpg)
+![quiz](/images/quiz.png)
 
 
