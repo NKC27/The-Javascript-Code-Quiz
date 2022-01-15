@@ -17,21 +17,21 @@
             <!-- Heading -->
             <h1>Welcome To The Javascript Code Quiz!</h1>
             <!-- buttons to initaliaze quiz or to view highscore -->
+            <p>You will set the timer going as soon as start.</p>
+            <br>
+            <p>If you selct the wrong answer time will be deducted!</p>
+            <!-- starts the page -->
             <button id="startbtn">Lets start!</button>
             <button id="startPageHighscore">View High scores</button>
         </div>
         <!-- Quiz code -->
         <div id="quiz" class='hide'>
-            <p class="question-header">Select your guess</p>
+            <p class="question-header">Please select an answer</p>
             <!-- Timer countdown -->
             <div id="timer">time</div>
-            <h3 class="current-question"></h3>
+            <h3 id="current-question"></h3>
             <!-- Questions -->
-            <div id="questions">
-                <!-- Buttons to select answers -->
-
-
-            </div>
+                 <div id="question-answers"></div>
         </div>
         <!-- End of game  -->
         <div id="gameover" class='hide'>
@@ -54,7 +54,7 @@
                 <div id="endGameBtns">
                     <!-- button to end game or restart -->
                     <button id="playAgain" ">Restart Quiz!</button>
-                        <button id=" clearHighscore" ">CLear score!</button>
+                        <button id=" clearHighscore" ">Clear score!</button>
                     </div>
                 </div>
 

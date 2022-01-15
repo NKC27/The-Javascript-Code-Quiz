@@ -67,6 +67,7 @@ input{
 
   button:hover{
       box-shadow: 4px 3px 6px #3d3e42;
+      justify-content: center;
   }
 
 #startpage{
@@ -82,9 +83,6 @@ input{
     font-size: x-large;
     text-shadow: .5px .5px black;
     text-align: center;
-}
-#quiz {
-    display: none;
 }
 
 #result {
