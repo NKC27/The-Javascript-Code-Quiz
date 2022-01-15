@@ -43,7 +43,7 @@ function countDown() {
   if (secs || mins) {
     setTimeout(countDown, 550); // 
   }
-  timer.innerHTML = mins + ":" + (secs.toString().length < 2 ? "0" + secs : secs); // Pad number
+  timer.innerHTML = mins + ":" + (secs.toString().length < 2 ? "0" + secs : secs); 
   secs -= 1;
   if (secs < 0) {
     mins -= 0;
