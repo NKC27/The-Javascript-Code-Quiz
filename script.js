@@ -47,7 +47,7 @@ function countDown() {
   secs -= 1;
   if (secs < 0) {
     mins -= 0;
-    secs = 59;
+    secs = 75;
   }
 
   function displayNextQuestion(question) {
@@ -98,7 +98,7 @@ function checkAnswer(){
     console.log('Button clicked:', this)
     console.log('Answer selected:', this.value)
     
-    if (this.value === ) {
+    if (this.value === questionAnswersSection) {
       alert("Correct!");
     } else {
       alert("Sorry incorrect!");
