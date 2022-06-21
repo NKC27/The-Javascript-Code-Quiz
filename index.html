@@ -1,68 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>The Javascript Code Quiz</title>
-</head>
-
-<body>
-    <!-- Container for quiz page -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Quiz</title>
+    <!-- CSS STLE SHEET -->
+    <link rel="stylesheet" href="./Assets/app.css" />
+    <!-- FONT GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <!-- Start page  -->
-        <div id="startpage">
-            <!-- Heading -->
-            <h1>Welcome To The Javascript Code Quiz!</h1>
-            <!-- buttons to initaliaze quiz or to view highscore -->
-            <p>You will set the timer going as soon as start.</p>
-            <br>
-            <p>If you selct the wrong answer time will be deducted!</p>
-            <!-- starts the page -->
-            <button id="startbtn">Lets start!</button>
-            <button id="startPageHighscore">View High scores</button>
-        </div>
-        <!-- Quiz code -->
-        <div id="quiz" class='hide'>
-            <p class="question-header">Please select an answer</p>
-            <!-- Timer countdown -->
-            <div id="timer">time</div>
-            <h3 id="current-question"></h3>
-            <!-- Questions -->
-                 <div id="question-answers"></div>
-        </div>
-        <!-- End of game  -->
-        <div id="gameover" class='hide'>
-            <!-- input field to enter your name via text -->
-            <input id="initials" type="text" placeholder="Enter your name here!" name="name" />
-            <!-- show your quiz results -->
-            <button id="submitScore">Submit here!</button>
-        </div>
-        <!-- Score section -->
-        <div id="highscoreContainer" class='hide'>
-            <div id="high-scorePage">
-                <div id="highscore-header">
-                    <h2>Name</h2>
-                    <h2>Score</h2>
-                </div>
-                <!--  -->
-                <div id="highscore-initials"></div>
-                <div id="highscore-score"></div>
-                <!-- Finsih game section -->
-                <div id="endGameBtns">
-                    <!-- button to end game or restart -->
-                    <button id="playAgain" ">Restart Quiz!</button>
-                        <button id=" clearHighscore" ">Clear score!</button>
-                    </div>
-                </div>
+      <div id="home" class="flex-center flex-column">
+        <h1>The Javascript Quiz!</h1>
 
-            </div>
-         
+        <h4 class="flex-center description">
+          Welcome to the Javascript Quiz! You will have 1 minute to answer the
+          questions correctly to earn points but, if you answer incorrectly you
+          will have time deducted. Good luck!
+        </h4>
+        <a class="btn" href="/game.html">Start Quiz!</a>
+        <a class="btn" href="/highscores.html">High Scores</a>
+      </div>
     </div>
-
-    <script src=" ./script.js"></script>
-</body>
-
+  </body>
 </html>
