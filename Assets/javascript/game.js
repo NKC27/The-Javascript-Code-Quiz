@@ -18,7 +18,7 @@ setInterval(updateCountdown, 1000);
 
 function updateCountdown() {
   const minutes = Math.floor(time / 60);
-  let seconds = time % 60;
+  let seconds = time % 10;
 
   seconds = seconds < 1 ? "0" + seconds : seconds;
 
@@ -88,6 +88,10 @@ choices.forEach((choice) => {
 
     if (classToApply === "correct") {
       incrementScore(CORRECT_BONUS);
+    } else {
+      if (classToApply === "incorrect") {
+        time = -05;
+      }
     }
 
     selectedChoice.parentElement.classList.add(classToApply);

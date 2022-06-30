@@ -25,7 +25,15 @@ https://nkc27.github.io/The-Javascript-Code-Quiz/
 Screen shot below of the quiz
 
 
-![quiz](/images/quiz.png)
+![quiz](./images/home.png)
+
+![quiz](./images/q1.png)
+
+![quiz](./images/q2.png)
+
+![quiz](./images/q3.png)
+
+![quiz](./images/highScores.png)
 
 ** Still work in progress and unfortunatley I have not finished this 
 project but will update soon with a fully finished quiz.
