@@ -25,7 +25,7 @@ function updateCountdown() {
   countdownEl.innerHTML = `${minutes}: ${seconds}`;
   time--;
 }
-
+// AskBCS Provided solution
 let questions = [
   {
     question: "JavaScript is a ___ -side programming language?",
@@ -62,6 +62,8 @@ let questions = [
     answer: 4,
   },
 ];
+
+// Learning Assistant commented out fetch statement
 
 // fetch("../questions.json")
 //   .then((res) => {
@@ -142,5 +144,7 @@ incrementScore = (num) => {
   score += num;
   scoreText.innerText = score;
 };
+
+// Learning Assistant provided function call due to commented out fetch statement
 
 startGame();
