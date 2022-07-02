@@ -26,19 +26,54 @@ function updateCountdown() {
   time--;
 }
 
-let questions = [];
+let questions = [
+  {
+    question: "JavaScript is a ___ -side programming language?",
+    choice1: "1. Client",
+    choice2: "2. Server",
+    choice3: "3. Both",
+    choice4: "4. None of the above",
+    answer: 3,
+  },
+  {
+    question:
+      "Which of the following will write the message “Hello World!” in an alert box?",
+    choice1: "alertBox(“Hello World!”);",
+    choice2: "alert(“Hello World!”);",
+    choice3: "alert(Hello World!).message;",
+    choice4: "messageAlert(“Hello World!”);",
+    answer: 2,
+  },
+  {
+    question: "Is Javascript the same as Java?",
+    choice1: "1. yes they are the same thing",
+    choice2: "2. no it is different from JavaScript",
+    choice3: "3. none of the above",
+    choice4: "4. all of the above",
+    answer: 2,
+  },
+  {
+    question:
+      "A very useful tool used during development and debugging for printing content to the debugger is:",
+    choice1: "1. JavaScript",
+    choice2: "2. terminal/bash",
+    choice3: "3. for loops",
+    choice4: "4. console log",
+    answer: 4,
+  },
+];
 
-fetch("../questions.json")
-  .then((res) => {
-    return res.json();
-  })
-  .then((loadedQuestions) => {
-    questions = loadedQuestions;
-    startGame();
-  })
-  .catch((err) => {
-    console.error(err);
-  });
+// fetch("../questions.json")
+//   .then((res) => {
+//     return res.json();
+//   })
+//   .then((loadedQuestions) => {
+//     questions = loadedQuestions;
+//     startGame();
+//   })
+//   .catch((err) => {
+//     console.error(err);
+//   });
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
@@ -107,3 +142,5 @@ incrementScore = (num) => {
   score += num;
   scoreText.innerText = score;
 };
+
+startGame();
